@@ -29,10 +29,10 @@
 
 /* Begin PBXFileReference section */
 		0D91CA4CC6044A6A6E7024BF /* Pods-MyPodsTest_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPodsTest_Tests.release.xcconfig"; path = "Target Support Files/Pods-MyPodsTest_Tests/Pods-MyPodsTest_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		1CD5CFCB73783896D3804C0B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1CD5CFCB73783896D3804C0B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2F8ED25D4B01E76234527E02 /* Pods_MyPodsTest_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPodsTest_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CE7CBBDC1F2DCD6EFEEEDC /* Pods-MyPodsTest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPodsTest_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MyPodsTest_Tests/Pods-MyPodsTest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		59164AE2C0930D0930DC8B11 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		59164AE2C0930D0930DC8B11 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MyPodsTest_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPodsTest_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6EB22C5CFD126A4081583D0A /* Pods-MyPodsTest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPodsTest_Example.release.xcconfig"; path = "Target Support Files/Pods-MyPodsTest_Example/Pods-MyPodsTest_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7B8545A8D67BCEE312A74BDA /* Pods-MyPodsTest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPodsTest_Example.debug.xcconfig"; path = "Target Support Files/Pods-MyPodsTest_Example/Pods-MyPodsTest_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		7E60A82461E22EE76B827030 /* MyPodsTest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MyPodsTest.podspec; path = ../MyPodsTest.podspec; sourceTree = "<group>"; };
+		7E60A82461E22EE76B827030 /* MyPodsTest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MyPodsTest.podspec; path = ../MyPodsTest.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F932CC35EBC3FC91A949DFA2 /* Pods_MyPodsTest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPodsTest_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -156,7 +156,6 @@
 				35CE7CBBDC1F2DCD6EFEEEDC /* Pods-MyPodsTest_Tests.debug.xcconfig */,
 				0D91CA4CC6044A6A6E7024BF /* Pods-MyPodsTest_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -269,10 +269,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MyPodsTest_Example/Pods-MyPodsTest_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/MyPodsTest/MyPodsTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MyPodsTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

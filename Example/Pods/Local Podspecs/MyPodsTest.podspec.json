@@ -1,0 +1,40 @@
+{
+  "name": "MyPodsTest",
+  "version": "0.1.0",
+  "summary": "A short description of MyPodsTest caofuqing MyPodsTest.podspec.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/caofuqing/MyPodsTest",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "caofuqing": "15082970403@163.com"
+  },
+  "source": {
+    "git": "https://github.com/caofuqing/MyPodsTest.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MyPodsTest/Classes/**/*",
+  "resource_bundles": {
+    "MyPodsTest": [
+      "MyPodsTest/Assets/*.png"
+    ]
+  },
+  "public_header_files": "MyPodsTest/Classes/**/*.h",
+  "frameworks": [
+    "UIKit",
+    "MapKit"
+  ],
+  "dependencies": {
+    "AFNetworking": [
+      "~> 3.1.0"
+    ],
+    "Masonry": [
+      "~> 0.6.4"
+    ]
+  }
+}
